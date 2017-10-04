@@ -1,0 +1,64 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+header .navegacao {
+  background-color: #35c1d0
+}
+
+.navegacao {
+  width: 100%;
+  height: 100%;
+}
+
+.navegacao .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.navegacao .logo {
+  float: left;
+}
+
+.navegacao .logo img {
+  width: 190px
+}
+
+.navegacao .menu li {
+  display: inline-block;
+}
+
+.navegacao .menu a {
+  padding: 20px 15px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.navegacao .registrar {
+  font-family: "Tahoma";
+  width: 190px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e74957;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.navegacao .redes-sociais li {
+  display: inline-block;
+}
+
+.navegacao .redes-sociais a {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 15px;
+}
