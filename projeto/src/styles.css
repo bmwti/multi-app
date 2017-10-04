@@ -2,7 +2,6 @@
 
 .base {
   font-family: 'Dosis', sans-serif;
-  margin-top: 150px;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -71,23 +70,10 @@ table {
   margin-bottom: 0
 }
 
+.base a {
+  transition: ease .5s
+}
+
 .base a, .base a:hover, .base a:focus, .base a:visited {
   text-decoration: none;
-}
-
-/* You can add global styles to this file, and also import other style files */
-ul {
-  padding-left: 0;
-}
-
-li {
-  list-style: none;
-}
-
-body {
-  margin-top: 150px;
-}
-
-img {
-  max-width: 100%;
 }
