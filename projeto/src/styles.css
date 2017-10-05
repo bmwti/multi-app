@@ -77,3 +77,7 @@ table {
 .base a, .base a:hover, .base a:focus, .base a:visited {
   text-decoration: none;
 }
+
+img {
+  max-width: 100%;
+}
