@@ -152,3 +152,104 @@ table {
 .navegacao .redes-sociais a:hover {
   color: #179f9e;
 }
+
+img {
+  max-width: 100%;
+}
+
+/*HELPERS*/
+
+
+/*BLOG*/
+.blog .title{
+  color: #ae3662;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.blog .sub-title{
+  color: #999999;
+  font-size: 28px;
+  text-align: center;
+  font-family: 'Tahoma', sans-serif;
+  margin-bottom: 30px;
+}
+
+/*LISTAGEM*/
+.listagem-relacionada {
+  margin-top: 120px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.listagem-relacionada h2{
+  color: #4c4c4c;
+  font-size: 25px;
+}
+
+.list-post{
+  margin-top: 50px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.list-post li{
+  margin-bottom: 30px;
+}
+
+.list-post figure{
+  position: relative;
+}
+
+.list-post .day{
+  background-color: #35c1d0;
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: -10px;
+  padding: 8px 15px;
+  box-sizing: border-box;
+}
+
+.list-post .day strong{
+  display: block;
+  font-size: 18px;
+  margin-bottom: -10px;
+}
+
+.list-post .day span{
+  font-size: 11px;
+}
+
+.list-post h3{
+  color: #333333;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.list-post p{
+  color: #999999;
+  font-size: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.list-post .visitantes{
+  margin-right: -20px;
+}
+
+.list-post .visitantes span{
+  color: #999999;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.list-post .visitantes i{
+  color: #35c1d0;
+  font-size: 16px;
+  margin-right: 10px;
