@@ -2,6 +2,7 @@
 
 .base {
   font-family: 'Dosis', sans-serif;
+  margin-top: 100px;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -76,4 +77,78 @@ table {
 
 .base a, .base a:hover, .base a:focus, .base a:visited {
   text-decoration: none;
+}
+
+/* MENU DE NAVEGAÇÃO */
+.navegacao {
+  width: 100%;
+  height: 100%;
+}
+
+.navegacao .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.navegacao .logo {
+  float: left;
+}
+
+.navegacao .logo img {
+  width: 170px
+}
+
+.navegacao .menu li {
+  display: inline-block;
+}
+
+.navegacao .menu a {
+  padding: 20px 15px;
+  height: 100px;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navegacao .menu a:hover {
+  background-color: #179f9e
+}
+
+.navegacao .registrar {
+  width: 190px;
+}
+
+.registrar {
+  font-family: "Tahoma";
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e74957;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.registrar:hover {
+  background-color: #d4434f;
+  color: #fff
+}
+
+.navegacao .redes-sociais li {
+  display: inline-block;
+}
+
+.navegacao .redes-sociais a {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.navegacao .redes-sociais a:hover {
+  color: #179f9e;
 }
