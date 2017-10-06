@@ -187,7 +187,7 @@ img {
 
 
 /*BLOG*/
-.blog .title{
+.listagem .title{
   color: #ae3662;
   font-size: 40px;
   text-align: center;
@@ -196,7 +196,7 @@ img {
   display: block;
 }
 
-.blog .sub-title{
+.listagem .sub-title{
   font-family: 'Tahoma';
   font-size: 18px;
   color: #aeaeae;
@@ -206,6 +206,25 @@ img {
   width: 100%;
   text-align: center;
   display: block;
+}
+
+.list-post{
+  margin-top: 0;
+}
+
+.single h2{
+  color: #333333;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.single p{
+  color: #999999;
+  font-size: 15px;
+  margin-bottom: 15px;
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 
 /*LISTAGEM*/
@@ -272,6 +291,11 @@ img {
   border-bottom: solid 1px #e5e5e5;
   margin-bottom: 15px;
   padding-bottom: 20px;
+}
+
+.single.list-post p {
+  border-bottom: 0;
+  padding-bottom: 0
 }
 
 .list-post .visitantes{
