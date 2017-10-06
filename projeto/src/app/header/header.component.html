@@ -1,27 +1,23 @@
 <header>
   <div class="navegacao">
     <div class="container">
-      <a href="#" class="logo">
+      <a [routerLink]="['/']" class="logo">
         <img src="../../assets/img/logo.png" alt="">
       </a>
 
       <nav>
         <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Perfil</a></li>
-          <li><a href="#">Hackathon</a></li>
-          <li><a href="#">Shopping</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a [routerLink]="['/']">Home</a></li>
+          <li><a [routerLink]="['/hackathons']">Hackathons</a></li>
+          <li><a [routerLink]="['/blog']">Blog</a></li>
+          <li><a [routerLink]="['/contato']">Contato</a></li>
         </ul>
       </nav>
 
-      <a href="#" class="registrar">REGISTRAR</a>
-
-      <ul class="redes-sociais">
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-      </ul>
+      <div class="btns">
+        <a href="#" class="btn-action red">CRIAR CONTA</a>
+        <a href="#" class="btn-action green">LOG IN</a>
+      </div>
     </div>
   </div>
 </header>

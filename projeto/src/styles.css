@@ -93,6 +93,11 @@ table {
   flex-direction: row;
 }
 
+.navegacao .container::before,
+.navegacao .container::after {
+  display: none;
+}
+
 .navegacao .logo {
   float: left;
 }
@@ -119,22 +124,43 @@ table {
   background-color: #179f9e
 }
 
-.navegacao .registrar {
-  width: 190px;
+.btns {
+  float: right;
+  display: flex;
+  align-items: flex-end;
 }
 
-.registrar {
+.btn-action {
   font-family: "Tahoma";
   padding: 10px;
   border-radius: 5px;
-  background-color: #e74957;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
+  margin-left:
 }
 
-.registrar:hover {
+.navegacao .btn-action {
+  margin-left: 15px;
+}
+
+.btn-action.green {
+  width: 120px;
+  background-color: #139384;
+}
+
+.btn-action.green:hover {
+  background-color: #0b6965;
+  color: #fff
+}
+
+.btn-action.red {
+  width: 190px;
+  background-color: #e74957;
+}
+
+.btn-action.red:hover {
   background-color: #d4434f;
   color: #fff
 }
@@ -202,6 +228,7 @@ img {
 
 .list-post li{
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .list-post figure{

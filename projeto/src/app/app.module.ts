@@ -13,6 +13,10 @@ import { FooterComponent } from './footer/footer.component';
 import { BlogListagemComponent } from './blog-listagem/blog-listagem.component';
 import { BlogSingleComponent } from './blog-single/blog-single.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { HackathonListagemComponent } from './hackathon-listagem/hackathon-listagem.component';
+import { HackathonSingleComponent } from './hackathon-single/hackathon-single.component';
+import { LoginComponent } from './login/login.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { PerfilComponent } from './perfil/perfil.component';
     FooterComponent,
     BlogListagemComponent,
     BlogSingleComponent,
-    PerfilComponent
+    PerfilComponent,
+    HackathonListagemComponent,
+    HackathonSingleComponent,
+    LoginComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,

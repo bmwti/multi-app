@@ -8,6 +8,6 @@ import {PerfilComponent} from './perfil/perfil.component';
 export const ROUTES: Routes = [
   {path:'', component: HomeComponent},
   {path:'blog', component: BlogListagemComponent},
-  {path:'single', component: BlogSingleComponent},
-  {path:'perfil', component: PerfilComponent}
+  {path:'o-que-e-hackathon', component: BlogSingleComponent},
+  {path:'user', component: PerfilComponent}
 ]
