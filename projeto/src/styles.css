@@ -163,7 +163,7 @@ img {
 /*BLOG*/
 .blog .title{
   color: #ae3662;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -171,11 +171,15 @@ img {
 }
 
 .blog .sub-title{
-  color: #999999;
-  font-size: 28px;
+  font-family: 'Tahoma';
+  font-size: 18px;
+  color: #aeaeae;
+  font-weight: 400;
+  display: block;
+  line-height: 20px;
+  width: 100%;
   text-align: center;
-  font-family: 'Tahoma', sans-serif;
-  margin-bottom: 30px;
+  display: block;
 }
 
 /*LISTAGEM*/
@@ -232,11 +236,15 @@ img {
   text-transform: uppercase;
 }
 .list-post p{
-  color: #999999;
-  font-size: 15px;
+  font-family: 'Tahoma';
+  font-size: 16px;
+  color: #aeaeae;
+  font-weight: 400;
+  display: block;
+  line-height: 20px;
+  border-bottom: solid 1px #e5e5e5;
   margin-bottom: 15px;
   padding-bottom: 20px;
-  border-bottom: solid 1px #e5e5e5;
 }
 
 .list-post .visitantes{
@@ -253,3 +261,4 @@ img {
   color: #35c1d0;
   font-size: 16px;
   margin-right: 10px;
+}
