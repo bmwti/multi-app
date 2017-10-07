@@ -10,6 +10,7 @@ import {BlogSingleComponent} from './blog-single/blog-single.component';
 import {PerfilComponent} from './perfil/perfil.component';
 import {LoginComponent} from './login/login.component';
 import {CadastroComponent} from './cadastro/cadastro.component';
+import {ContatoComponent} from './contato/contato.component';
 
 export const ROUTES: Routes = [
   {path:'', component: HomeComponent},
@@ -21,5 +22,6 @@ export const ROUTES: Routes = [
   {path:'blog/o-que-e-hackathon', component: BlogSingleComponent},
   {path:'user', component: PerfilComponent},
   {path:'login', component: LoginComponent},
-  {path:'cadastro', component: CadastroComponent}
+  {path:'cadastro', component: CadastroComponent},
+  {path:'contato', component: ContatoComponent}
 ]

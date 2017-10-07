@@ -46,30 +46,6 @@
   margin-right: 5px;
 }
 
-
-.perfil .coins {
-  float: right;
-  margin-left: -30px;
-}
-
-.perfil .coins span{
-  font-size: 17px;
-  margin-left: 30px;
-}
-
-.perfil .coins i{
-  margin-right: 5px;
-  font-size: 20px;
-}
-
-.perfil .coins .fa-money{
-  color: #f7dc70;
-}
-
-.perfil .coins .fa-diamond{
-  color: #b54870;
-}
-
 .perfil .conquistas {
   display: block;
   float: left;
