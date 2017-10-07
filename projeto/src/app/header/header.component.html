@@ -9,14 +9,15 @@
         <ul class="menu">
           <li><a [routerLink]="['/']">Home</a></li>
           <li><a [routerLink]="['/hackathons']">Hackathons</a></li>
+          <li><a [routerLink]="['/shopping']">Shopping</a></li>
           <li><a [routerLink]="['/blog']">Blog</a></li>
           <li><a [routerLink]="['/contato']">Contato</a></li>
         </ul>
       </nav>
 
       <div class="btns">
-        <a href="#" class="btn-action red">CRIAR CONTA</a>
-        <a href="#" class="btn-action green">LOG IN</a>
+        <a [routerLink]="['/cadastro']" class="btn-action red">CRIAR CONTA</a>
+        <a [routerLink]="['/login']" class="btn-action green">LOGIN</a>
       </div>
     </div>
   </div>

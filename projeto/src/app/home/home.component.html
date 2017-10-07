@@ -9,7 +9,7 @@
               <span id="indent">Talentos</span>
             </h1>
             <h2>Uma plataforma de<br>hackathons e desafios</h2>
-            <a href="#" class="registrar">REGISTRAR</a>
+            <a href="#" class="btn-action red">CRIAR CONTA</a>
           </div>
         </div>
         <div class="col-sm-7">
@@ -191,58 +191,64 @@
     </div>
   </section>
 
-  <section id="home-blog" class="blog">
+  <section id="home-blog" class="listagem">
     <div class="container">
       <h2 class="title">Blog</h2>
       <h3 class="sub-title">Conheça mais sobre o mundo de hackathons</h3>
 
-      <ul class="list-post">
-        <li class="col-md-4">
-          <figure>
-            <img src="../../assets/img/img-default.jpg" alt="" />
-            <div class="day">
-              <strong>15</strong>
-              <span>Jan</span>
+      <div class="row">
+        <ul class="list-post">
+          <li [routerLink]="['/blog/o-que-e-hackathon']" class="col-md-4">
+            <figure>
+              <img src="../../assets/img/img-default.jpg" alt="" />
+              <div class="day">
+                <strong>15</strong>
+                <span>Jan</span>
+              </div>
+            </figure>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="visitantes">
+              <span><i class="fa fa-eye" aria-hidden="true"></i> 542</span>
+              <span><i class="fa fa-commenting" aria-hidden="true"></i>17</span>
             </div>
-          </figure>
-          <h3>Lorem ipsum dolor sit amet</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <div class="visitantes">
-            <span><i class="fa fa-eye" aria-hidden="true"></i> 542</span>
-            <span><i class="fa fa-commenting" aria-hidden="true"></i>17</span>
-          </div>
-        </li>
-        <li class="col-md-4">
-          <figure>
-            <img src="../../assets/img/img-default.jpg" alt="" />
-            <div class="day">
-              <strong>15</strong>
-              <span>Jan</span>
+          </li>
+          <li [routerLink]="['/blog/o-que-e-hackathon']" class="col-md-4">
+            <figure>
+              <img src="../../assets/img/img-default.jpg" alt="" />
+              <div class="day">
+                <strong>15</strong>
+                <span>Jan</span>
+              </div>
+            </figure>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="visitantes">
+              <span><i class="fa fa-eye" aria-hidden="true"></i> 542</span>
+              <span><i class="fa fa-commenting" aria-hidden="true"></i>17</span>
             </div>
-          </figure>
-          <h3>Lorem ipsum dolor sit amet</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <div class="visitantes">
-            <span><i class="fa fa-eye" aria-hidden="true"></i> 542</span>
-            <span><i class="fa fa-commenting" aria-hidden="true"></i>17</span>
-          </div>
-        </li>
-        <li class="col-md-4">
-          <figure>
-            <img src="../../assets/img/img-default.jpg" alt="" />
-            <div class="day">
-              <strong>15</strong>
-              <span>Jan</span>
+          </li>
+          <li [routerLink]="['/blog/o-que-e-hackathon']" class="col-md-4">
+            <figure>
+              <img src="../../assets/img/img-default.jpg" alt="" />
+              <div class="day">
+                <strong>15</strong>
+                <span>Jan</span>
+              </div>
+            </figure>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="visitantes">
+              <span><i class="fa fa-eye" aria-hidden="true"></i> 542</span>
+              <span><i class="fa fa-commenting" aria-hidden="true"></i>17</span>
             </div>
-          </figure>
-          <h3>Lorem ipsum dolor sit amet</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <div class="visitantes">
-            <span><i class="fa fa-eye" aria-hidden="true"></i> 542</span>
-            <span><i class="fa fa-commenting" aria-hidden="true"></i>17</span>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row flex-row">
+        <a id="ver-mais" [routerLink]="['/blog']" class="btn-action green">VER MAIS</a>
+      </div>
     </div>
   </section>
 

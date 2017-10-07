@@ -17,6 +17,8 @@ import { HackathonListagemComponent } from './hackathon-listagem/hackathon-lista
 import { HackathonSingleComponent } from './hackathon-single/hackathon-single.component';
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { ShoppingListagemComponent } from './shopping-listagem/shopping-listagem.component';
+import { ShoppingSingleComponent } from './shopping-single/shopping-single.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { CadastroComponent } from './cadastro/cadastro.component';
     HackathonListagemComponent,
     HackathonSingleComponent,
     LoginComponent,
-    CadastroComponent
+    CadastroComponent,
+    ShoppingListagemComponent,
+    ShoppingSingleComponent
   ],
   imports: [
     BrowserModule,

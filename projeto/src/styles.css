@@ -132,7 +132,7 @@ table {
 
 .btn-action {
   font-family: "Tahoma";
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -145,9 +145,13 @@ table {
   margin-left: 15px;
 }
 
-.btn-action.green {
+.navegacao .btn-action.green {
   width: 120px;
+}
+
+.btn-action.green {
   background-color: #139384;
+  max-width: 170px;
 }
 
 .btn-action.green:hover {
@@ -163,6 +167,17 @@ table {
 .btn-action.red:hover {
   background-color: #d4434f;
   color: #fff
+}
+
+.btn-action.gray {
+  background-color: #d6d3d3;
+  max-width: 170px;
+  color: #4a4a4a
+}
+
+.btn-action.gray:hover {
+  background-color: #c1c1c1;
+  color: #4a4a4a
 }
 
 .navegacao .redes-sociais li {
@@ -184,9 +199,79 @@ img {
 }
 
 /*HELPERS*/
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.modal {
+  z-index: 99999999!important;
+  top: 50%!important;
+  left: 50%!important;
+  transform: translate(-50%,-50%)!important;
+  overflow: visible!important;
+}
+
+.modal-dialog {
+  /*height: 100%;*/
+}
+
+.modal-header,
+.modal-body {
+  background-color: #fff;
+}
+
+.modal-header {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.modal-body {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.modal-content {
+  background-color: #35c1d0
+}
+
+.nosso-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.9;
+  z-index: 99999998;
+  display: none;
+}
+
+.text-green {
+  color: #139384;
+}
+
+.divider {
+  padding: 30px 15px;
+}
+
+.divider .line {
+  width: 100%;
+  height: 2px;
+  background-color: #d5d5d5;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
 
 /*BLOG*/
+.listagem {
+  margin-top: 150px
+}
+
 .listagem .title{
   color: #ae3662;
   font-size: 40px;
@@ -225,6 +310,12 @@ img {
   margin-bottom: 15px;
   border-bottom: 0;
   padding-bottom: 0;
+  width: 100%;
+  float: left;
+}
+
+.btn-single-action {
+  margin-top: 12px;
 }
 
 /*LISTAGEM*/
@@ -252,6 +343,28 @@ img {
 
 .list-post figure{
   position: relative;
+}
+
+.listagem .list-post figure{
+  overflow: hidden;
+  height: 185px;
+  background-color: #000;
+}
+
+.listagem .list-post figure img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: ease 1s;
+  max-width: initial;
+  height: 100%;
+  opacity: 0.8
+}
+.listagem .list-post li:hover img{
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
 }
 
 .list-post .day{

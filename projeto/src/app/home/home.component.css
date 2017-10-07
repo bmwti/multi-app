@@ -344,5 +344,10 @@
 }
 
 #home-blog {
+  margin-top: 0;
   padding: 100px 0;
+}
+
+#ver-mais {
+  width: 200px;
 }
