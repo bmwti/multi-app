@@ -204,36 +204,10 @@ img {
   align-items: center;
   justify-content: center;
 }
-
-.modal {
-  z-index: 99999999!important;
-  top: 50%!important;
-  left: 50%!important;
-  transform: translate(-50%,-50%)!important;
-  overflow: visible!important;
-}
-
-.modal-dialog {
-  /*height: 100%;*/
-}
-
-.modal-header,
-.modal-body {
-  background-color: #fff;
-}
-
-.modal-header {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.modal-body {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.modal-content {
-  background-color: #35c1d0
+.flex-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .nosso-overlay {
@@ -250,6 +224,10 @@ img {
 
 .text-green {
   color: #139384;
+}
+
+.text-red {
+  color: #b54870;
 }
 
 .divider {
@@ -346,24 +324,22 @@ img {
 }
 
 .listagem .list-post figure{
-  overflow: hidden;
   height: 185px;
   background-color: #000;
 }
 
 .listagem .list-post figure img{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   transition: ease 1s;
   max-width: initial;
   height: 100%;
-  opacity: 0.8
+  opacity: 0.9
 }
 .listagem .list-post li:hover img{
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: scale(1.1);
   opacity: 1;
 }
 
@@ -430,4 +406,101 @@ img {
 .center-block {
   display: block;
   float: none!important;
+}
+
+/* MODAL */
+.modal {
+  z-index: 99999999!important;
+  top: 50%!important;
+  left: 50%!important;
+  transform: translate(-50%,-50%)!important;
+  overflow: visible!important;
+}
+
+.modal-dialog {
+  /*height: 100%;*/
+}
+
+.modal-header,
+.modal-body {
+  background-color: #fff;
+}
+
+.modal-header {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.modal-body {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.modal-content {
+  background-color: #35c1d0
+}
+
+.modal-content {
+  position: absolute!important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  opacity: 0;
+  z-index: 1;
+}
+
+.modal-content.show {
+  opacity: 1;
+  z-index: 3;
+}
+
+.info-modal {
+  width: 100%;
+  height: 100%;
+}
+
+.info-modal h2 {
+  color: #333333;
+  font-size: 22px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  float: left;
+  font-weight: 600;
+}
+.info-user .coins span {
+  color: #333333;
+}
+
+.info-user figure {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin-right: 20px
+}
+
+/* FORMULARIO */
+.formulario {
+  padding: 40px 0;
+}
+
+.formulario h2, .formulario label{
+  color: #35c1d0;
+}
+
+.formulario .form-control {
+  background-color: #eeeeee;
+  border: none;
+  box-shadow: none;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+
+.formulario .btn-action {
+  width: 190px;
+  background-color: #35c1d0;
+  margin-top: 20px
 }

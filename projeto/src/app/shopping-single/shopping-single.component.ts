@@ -41,7 +41,7 @@ export class ShoppingSingleComponent implements OnInit {
     $('.info-course .coins a').click(abrirConfirmar);
     $('#btn-cancelar').click(fecharConfirmar);
     $('#btn-confirmar').click(animacaoConfirmar);
-    $('#btn-fechar').click(fecharModal);
+    $('.btn-fechar').click(fecharModal);
   }
 
 }

@@ -7,6 +7,64 @@ header {
   z-index: 999999;
 }
 
+header #item-shopping {
+  display: none;
+}
+
+header.user-on #item-shopping {
+  display: flex;
+}
+
+header .action-perfil {
+  display: none;
+}
+
+header.user-on .action-perfil {
+  display: block;
+}
+
+header.user-on .btns {
+  display: none;
+}
+
 header .navegacao {
   background-color: #35c1d0
+}
+
+header .info-user {
+  cursor: pointer;
+  position: relative;
+}
+
+header .box-logout {
+  position: absolute;
+  width: 100px;
+  top: 80px;
+  right: 20px;
+  transition: all 1s;
+  opacity: 0;
+  color: #FFF;
+  font-size: 18px;
+}
+
+header .box-logout li {
+  background-color: #35c1d0;
+  border: 1px solid rgba(255,255,255,.4)
+}
+
+header .box-logout a {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  justify-content: space-between;
+}
+
+header .box-logout a:hover {
+  background-color: #179f9e;
+  color: #fff;
+}
+
+header .info-user:hover .box-logout {
+  opacity: 1
 }

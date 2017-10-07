@@ -9,14 +9,17 @@ import {BlogListagemComponent} from './blog-listagem/blog-listagem.component';
 import {BlogSingleComponent} from './blog-single/blog-single.component';
 import {PerfilComponent} from './perfil/perfil.component';
 import {LoginComponent} from './login/login.component';
+import {CadastroComponent} from './cadastro/cadastro.component';
 
 export const ROUTES: Routes = [
   {path:'', component: HomeComponent},
   {path:'hackathons', component: HackathonListagemComponent},
+  {path:'hackathons/hackathon-da-fiap-em-parceria-com-a-everis-brasil', component: HackathonSingleComponent},
   {path:'shopping', component: ShoppingListagemComponent},
   {path:'shopping/internet-das-coisas-para-todos', component: ShoppingSingleComponent},
   {path:'blog', component: BlogListagemComponent},
   {path:'blog/o-que-e-hackathon', component: BlogSingleComponent},
   {path:'user', component: PerfilComponent},
-  {path:'login', component: LoginComponent}
+  {path:'login', component: LoginComponent},
+  {path:'cadastro', component: CadastroComponent}
 ]
