@@ -338,6 +338,11 @@
   margin-bottom: 20px
 }
 
+.game-item i {
+  font-size: 18px;
+  margin-right: 10px
+}
+
 #game-destaque {
   margin-top: 50px;
   display: block;
