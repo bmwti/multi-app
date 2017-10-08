@@ -20,6 +20,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { ShoppingListagemComponent } from './shopping-listagem/shopping-listagem.component';
 import { ShoppingSingleComponent } from './shopping-single/shopping-single.component';
 import { ContatoComponent } from './contato/contato.component';
+import { PerfilCompanyComponent } from './perfil-company/perfil-company.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ContatoComponent } from './contato/contato.component';
     CadastroComponent,
     ShoppingListagemComponent,
     ShoppingSingleComponent,
-    ContatoComponent
+    ContatoComponent,
+    PerfilCompanyComponent
   ],
   imports: [
     BrowserModule,
