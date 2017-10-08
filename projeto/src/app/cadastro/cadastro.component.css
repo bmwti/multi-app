@@ -1,0 +1,90 @@
+.tabs {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs li{
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  width: 45%;
+}
+.tabs a{
+  color: #fff;
+  display: block;
+  padding: 15px 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  background-color: #139384;
+  border-radius: 5px;
+}
+
+.tabs li a.active,
+.tabs li a:hover{
+  background-color: #35c1d0;
+}
+
+.assinaturas {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+
+.assinaturas .assinatura {
+  box-shadow:2px 3px 11px -2px #ccc;
+  transition: all 0.3s linear;
+  background-color: #fff;
+  margin-bottom: 20px;
+  width: 48%;
+}
+
+.assinaturas h2{
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.assinaturas .tipo-assinatura {
+  display: block;
+  text-align: center;
+  background-color: #139384;
+  color: #fff;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+
+.assinaturas .assinatura:hover,
+.assinaturas .assinatura:focus {
+  transition: all 0.3s linear;
+  transform: scale(1.08);
+  position: relative;
+  z-index: 22;
+}
+
+.assinaturas .valor-assinatura {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.assinaturas ul {
+  margin-top: 20px;
+}
+
+.assinaturas li {
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 20, 80, 0.1);
+  margin-bottom: 10px;
+  padding: 0 18px 5px;
+  font-size: 16px;
+}
+
+.assinaturas li:last-child {
+  border-bottom: 0;
+}

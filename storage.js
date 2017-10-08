@@ -1,5 +1,5 @@
-var data = {  
-  "user":{  
+var data = {
+  "user":{
     "nome":  "Claudeixom",
     "email": "claudeixom@fiap.com",
     "coins": {
@@ -80,7 +80,7 @@ btngoldcoin.addEventListener("click", function(e){
   var valorCurso = e.target.dataset.coin
   var valorAtual = JSON.parse(localStorage.getItem('user')).user.coins.goldCoins
   var el =  document.getElementById('goldCoin')
-  
+
   if (valorAtual < valorCurso) {
     document.getElementById('error').className = 'on'
   } else {
@@ -92,5 +92,5 @@ btngoldcoin.addEventListener("click", function(e){
     var obj = data
     console.log(data.user.coins)
     saveData(obj)
-  }  
+  }
 });

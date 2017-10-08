@@ -19,12 +19,45 @@ header .action-perfil {
   display: none;
 }
 
-header.user-on .action-perfil {
+header.user-on .action-perfil,
+header.faculdade-on .action-perfil {
   display: block;
 }
 
-header.user-on .btns {
+header.user-on .btns,
+header.faculdade-on .btns {
   display: none;
+}
+
+header .user-img {
+  display: none;
+}
+
+header.user-on .user-img {
+  display: block;
+}
+
+header .user-link {
+  display: none;
+}
+
+header.user-on .user-link {
+  display: block;
+}
+
+header .faculdade-img {
+  display: none;
+}
+header.faculdade-on .faculdade-img {
+  display: block;
+}
+
+
+header .faculdade-link {
+  display: none;
+}
+header.faculdade-on .faculdade-link {
+  display: block;
 }
 
 header .navegacao {

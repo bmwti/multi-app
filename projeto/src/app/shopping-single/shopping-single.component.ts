@@ -11,6 +11,102 @@ export class ShoppingSingleComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+    var data = {
+      "user":{
+        "nome":  "Claudeixom",
+        "email": "claudeixom@fiap.com",
+        "coins": {
+          "multiCoins": 1500,
+          "goldCoins": 200
+        }
+      }
+    };
+
+    console.log('Data', data)
+
+    var btnmultcoin = $('#btnmultcoin')
+    var btngoldcoin = $('#btngoldcoin')
+    var userMultiCoins = $('#user-multi_coins')
+    var userGoldCoins = $('#user-gold_coins')
+    var btnCancelar = $('#btn-cancelar')
+    var header = $('header');
+
+    if(localStorage.getItem('user')){
+      header.addClass('user-on')
+    } else if(localStorage.getItem('faculdade')){
+      header.addClass('faculdade-on')
+    }
+
+    virify()
+
+    function addDados(obj){
+      var multiCoin = obj.user.coins.multiCoins
+      var goldCoin = obj.user.coins.goldCoins
+      userMultiCoins[0].innerHTML = '<i class="fa fa-money" aria-hidden="true"></i> ' + multiCoin
+      userGoldCoins[0].innerHTML = '<i class="fa fa-diamond" aria-hidden="true"></i> ' + goldCoin
+    }
+
+    function virify(){
+      if(localStorage.getItem('user')){
+        let objUser = JSON.parse(localStorage.getItem('user'))
+        addDados(objUser)
+        console.log('LOGADO')
+      }
+    }
+
+    function saveData(obj){
+      localStorage.setItem('user', JSON.stringify(obj));
+      console.log('O dado foi salvo!!!!')
+    }
+
+    btnmultcoin.click(function(e){
+      var valorCurso = $(this).data('coin')
+      var valorAtual = JSON.parse(localStorage.getItem('user')).user.coins.multiCoins
+
+      if (valorAtual < valorCurso) {
+        // document.getElementById('error').className = 'on'
+      } else {
+         //comprar
+        valorCurso = parseInt(valorCurso)
+        var resultado = valorAtual - valorCurso
+        userMultiCoins[0].textContent = resultado + '$'
+        data.user.coins.multiCoins = resultado
+        var obj = data
+        saveData(obj)
+      }
+    });
+
+    btngoldcoin.click(function(e){
+      var valorCurso = $(this).data('coin')
+      var valorAtual = JSON.parse(localStorage.getItem('user')).user.coins.goldCoins
+      var el = $('#user-gold_coins')
+
+      if (valorAtual < valorCurso) {
+        // document.getElementById('error').className = 'on'
+      } else {
+         //comprar
+        valorCurso = parseInt(valorCurso)
+        var resultado = valorAtual - valorCurso
+        userGoldCoins[0].textContent = resultado + '$'
+        data.user.coins.goldCoins = resultado
+        var obj = data
+        saveData(obj)
+      }
+    });
+
+    btnCancelar.click(function(){
+      userGoldCoins[0].innerHTML = '<i class="fa fa-diamond" aria-hidden="true"></i> 200$'
+      userMultiCoins[0].innerHTML = '<i class="fa fa-money" aria-hidden="true"></i> 1500$'
+      fecharModal()
+      data.user.coins.goldCoins = 200
+      data.user.coins.multiCoins = 1500
+      var obj = data
+      saveData(obj)
+    })
+
+    // Modal
+
     var abrirModal = function() {
       $('.modal, .nosso-overlay').fadeIn();
     }
@@ -42,6 +138,6 @@ export class ShoppingSingleComponent implements OnInit {
     $('#btn-cancelar').click(fecharConfirmar);
     $('#btn-confirmar').click(animacaoConfirmar);
     $('.btn-fechar').click(fecharModal);
-  }
 
+  }
 }
