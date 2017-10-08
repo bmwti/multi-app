@@ -560,17 +560,18 @@ img {
 }
 
 .coins span{
-  font-size: 17px;
+  font-family: 'Tahoma';
+  font-size: 20px;
   margin-left: 30px;
 }
 
 .coins i{
   margin-right: 5px;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .coins .fa-money{
-  color: #f7dc70;
+  color: #139384;
 }
 
 .coins .fa-diamond{
