@@ -16,6 +16,15 @@ export class HomeComponent implements OnInit {
       $('.game-item').removeClass('active');
       $('#game-' + id).addClass('active');
     });
+
+    //Logado
+    var header = $('header');
+    if(localStorage.getItem('user')){
+      header.addClass('user-on')
+    } else if(localStorage.getItem('faculdade')){
+      header.addClass('faculdade-on')
+    }
   }
 
+  }
 }
