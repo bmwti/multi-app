@@ -12,7 +12,7 @@
       <h2>Everton Strack</h2>
       <div class="coins">
         <span><i class="fa fa-money" aria-hidden="true"></i> 1.500</span>
-        <span><i class="fa fa-diamond" aria-hidden="true"></i> 200</span>
+        <span class="btn-hover openModal"><i class="fa fa-diamond" aria-hidden="true"></i> 200</span>
       </div>
       <p>Meu nome é Everton Strack , mas todos me chamam de Thom. Tenho 29 anos, moro em São Leopoldo, Rio Grande do Sul e trabalho como Desenvolvedor Front-end desde 2008.</p>
       <p>Atualmente trabalho como desenvolvedor front-end freelancer. Já trabalhei em empresas como Brivia, E-Storage, W3Haus e Huia. Desenvolvi e participei de vários projetos legais, alguns deles estão aqui no meu portfolio de desenvolvedor front-end. Seja Bem vindo!.</p>
@@ -24,102 +24,138 @@
       </div>
     </div>
   </div>
-  <section class="listagem-relacionada">
-    <h2>Hackathons participados</h2>
-    <ul class="list-post">
-      <li class="col-md-4">
-        <figure>
-          <img src="../../assets/img/img-default.jpg" alt="" />
-          <div class="day">
-            <strong>15</strong>
-            <span>Jan</span>
+  <section class="listagem">
+    <div class="row">
+      <h2>Hackathons Participados</h2>
+      <ul class="list-post">
+        <li [routerLink]="['/hackathons/hackathon-da-fiap-em-parceria-com-a-everis-brasil']" class="col-md-4">
+          <figure>
+            <img src="../../assets/img/banner-hackathon-fiap.jpg" alt="" />
+            <div class="day">
+              <strong>15</strong>
+              <span>Jan</span>
+            </div>
+          </figure>
+
+          <h3>Hackathon da FIAP em parceria com a everis Brasil.</h3>
+          <p>O tema do desafio lançado aos alunos é: “Colaboração para potencializar a inovação no ecossistema da indústria...</p>
+
+          <div class="visitantes">
+            <span><i class="fa fa-users" aria-hidden="true"></i> 542</span>
           </div>
-        </figure>
-        <h3>Lorem ipsum dolor sit amet</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="visitantes">
-          <span><i class="fa fa-eye" aria-hidden="true"></i> 542</span>
-          <span><i class="fa fa-commenting" aria-hidden="true"></i>17</span>
-        </div>
-      </li>
-      <li class="col-md-4">
-        <figure>
-          <img src="../../assets/img/img-default.jpg" alt="" />
-          <div class="day">
-            <strong>15</strong>
-            <span>Jan</span>
+        </li>
+        <li [routerLink]="['/hackathons/hackathon-da-fiap-em-parceria-com-a-everis-brasil']" class="col-md-4">
+          <figure>
+            <img src="../../assets/img/banner-hackathon-uol.jpg" alt="" />
+            <div class="day">
+              <strong>15</strong>
+              <span>Jan</span>
+            </div>
+          </figure>
+          <h3>O UOL HOST te desafia a mudar a vida do empreendedor digital brasileiro!</h3>
+          <p>Você vai criar ferramentas que ajudarão este empreendedor a crescer ainda mais e aproveitar as facilidades do mundo...</p>
+          <div class="visitantes">
+            <span><i class="fa fa-users" aria-hidden="true"></i> 542</span>
           </div>
-        </figure>
-        <h3>Lorem ipsum dolor sit amet</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="visitantes">
-          <span><i class="fa fa-eye" aria-hidden="true"></i> 542</span>
-          <span><i class="fa fa-commenting" aria-hidden="true"></i>17</span>
-        </div>
-      </li>
-      <li class="col-md-4">
-        <figure>
-          <img src="../../assets/img/img-default.jpg" alt="" />
-          <div class="day">
-            <strong>15</strong>
-            <span>Jan</span>
+        </li>
+        <li [routerLink]="['/hackathons/hackathon-da-fiap-em-parceria-com-a-everis-brasil']" class="col-md-4">
+          <figure>
+            <img src="../../assets/img/banner-hackathon-saint.jpg" alt="" />
+            <div class="day">
+              <strong>15</strong>
+              <span>Jan</span>
+            </div>
+          </figure>
+          <h3>A Saint-Gobain está inovando com o Hackathon!</h3>
+          <p>Em sua primeira edição no Brasil, o evento irá reunir estudantes, programadores, designers e outros profissionais ligados ao mundo...</p>
+          <div class="visitantes">
+            <span><i class="fa fa-users" aria-hidden="true"></i> 542</span>
           </div>
-        </figure>
-        <h3>Lorem ipsum dolor sit amet</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="visitantes">
-          <span><i class="fa fa-eye" aria-hidden="true"></i> 542</span>
-          <span><i class="fa fa-commenting" aria-hidden="true"></i>17</span>
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
     <h2>Cursos adquiridos</h2>
     <ul class="list-post">
-      <li class="col-md-4">
+      <li [routerLink]="['/shopping/internet-das-coisas-para-todos']" class="col-md-4">
         <figure>
-          <img src="../../assets/img/img-default.jpg" alt="" />
+          <img src="../../assets/img/banner-curso.jpg" alt="" />
           <div class="day">
             <strong>15</strong>
             <span>Jan</span>
           </div>
         </figure>
-        <h3>Lorem ipsum dolor sit amet</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3>INTERNET DAS COISAS PARA TODOS</h3>
+        <p>Se você já ouviu falar em Internet das Coisas e não sabe ainda como aproveitar as infinitas oportunidades de negócios nos próximos anos, este workshop...</p>
         <div class="visitantes">
           <span><i class="fa fa-eye" aria-hidden="true"></i> 542</span>
-          <span><i class="fa fa-commenting" aria-hidden="true"></i>17</span>
         </div>
       </li>
-      <li class="col-md-4">
+      <li [routerLink]="['/shopping/internet-das-coisas-para-todos']" class="col-md-4">
         <figure>
-          <img src="../../assets/img/img-default.jpg" alt="" />
+          <img src="../../assets/img/banner-curso-design-thinking.jpg" alt="" />
           <div class="day">
             <strong>15</strong>
             <span>Jan</span>
           </div>
         </figure>
-        <h3>Lorem ipsum dolor sit amet</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3>Design Thinking</h3>
+        <p>Desenvolver um processo intencional com metodologias para se chegar ao novo, a soluções criativas, criar impactos positivos e surpreender. Design...</p>
         <div class="visitantes">
-          <span><i class="fa fa-eye" aria-hidden="true"></i> 542</span>
-          <span><i class="fa fa-commenting" aria-hidden="true"></i>17</span>
+          <span><i class="fa fa-users" aria-hidden="true"></i> 542</span>
         </div>
       </li>
-      <li class="col-md-4">
+      <li [routerLink]="['/shopping/internet-das-coisas-para-todos']" class="col-md-4">
         <figure>
-          <img src="../../assets/img/img-default.jpg" alt="" />
+          <img src="../../assets/img/banner-curso-big-data.jpg" alt="" />
           <div class="day">
             <strong>15</strong>
             <span>Jan</span>
           </div>
         </figure>
-        <h3>Lorem ipsum dolor sit amet</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3>Big Data</h3>
+        <p>No universo emergente de tecnologias relacionadas ao Big Data, destaca-se um novo papel de extrema relevância: o cientista de dados (Data Scientist).</p>
         <div class="visitantes">
-          <span><i class="fa fa-eye" aria-hidden="true"></i> 542</span>
-          <span><i class="fa fa-commenting" aria-hidden="true"></i>17</span>
+          <span><i class="fa fa-users" aria-hidden="true"></i> 542</span>
         </div>
       </li>
     </ul>
   </section>
+</div>
+
+<!-- Modal -->
+<div class="nosso-overlay"></div>
+<div class="modal">
+  <div class="modal-dialog" role="document">
+    <div id="lisgatem-moedas" class="show modal-content">
+      <div class="modal-header">
+        <h3 class="text-green text-center">SUAS GOLD COINS</h3>
+      </div>
+      <div class="modal-body">
+        <div class="info-modal">
+          <div class="row">
+            <div class="col-md-12">
+              <ul id="lista-gold_coins">
+                <li>
+                  <i class="fa fa-diamond"></i>
+                  FIAP - <span class="text-green">145$</span>
+                </li>
+                <li>
+                  <i class="fa fa-diamond"></i>
+                  UOL - <span class="text-green">340$</span>
+                </li>
+                <li>
+                  <i class="fa fa-diamond"></i>
+                  Saint-gobain - <span class="text-green">100$</span>
+                </li>
+                <li>
+                  <i class="fa fa-diamond"></i>
+                  Seepix - <span class="text-green">302$</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

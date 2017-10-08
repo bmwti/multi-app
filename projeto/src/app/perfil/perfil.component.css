@@ -1,34 +1,3 @@
-.perfil {
-  margin-top: 50px;
-}
-
-.container{
-  padding-bottom: 50px;
-}
-
-.perfil h2 {
-  color: #333333;
-  font-size: 32px;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  float: left;
-  font-weight: 600;
-}
-
-.perfil p {
-  color: #999999;
-  font-size: 20px;
-  margin-bottom: 15px;
-  border-bottom: 0;
-  padding-bottom: 0;
-  display: block;
-  float: left;
-}
-
-.perfil figure {
-  position: relative;
-}
-
 .perfil .hp {
   background-color: #35c1d0;
   position: absolute;
@@ -44,30 +13,6 @@
   color: #ffb401;
   font-size: 25px;
   margin-right: 5px;
-}
-
-
-.perfil .coins {
-  float: right;
-  margin-left: -30px;
-}
-
-.perfil .coins span{
-  font-size: 17px;
-  margin-left: 30px;
-}
-
-.perfil .coins i{
-  margin-right: 5px;
-  font-size: 20px;
-}
-
-.perfil .coins .fa-money{
-  color: #f7dc70;
-}
-
-.perfil .coins .fa-diamond{
-  color: #b54870;
 }
 
 .perfil .conquistas {
@@ -96,4 +41,39 @@
 }
 .perfil .conquistas .bronze{
   color: #eda75a;
+}
+
+.perfil .coins span {
+  padding: 10px 10px;
+  border-radius: 4px;
+  margin-left: 0;
+  transition: all 1s;
+}
+
+.perfil .btn-hover {
+  cursor: pointer;
+}
+
+.perfil .btn-hover:hover {
+  background-color: #e5e5e5
+}
+
+#lista-gold_coins li {
+  width: 100%;
+  padding: 15px;
+}
+
+#lista-gold_coins li {
+  font-size: 18px;
+}
+
+#lista-gold_coins li i {
+  font-size: 20px;
+  color: #b54870;
+  margin-right: 10px;
+}
+
+#lista-gold_coins li span {
+  font-family: 'Tahoma';
+  font-weight: 500;
 }

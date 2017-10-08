@@ -245,9 +245,21 @@ img {
   align-items: center;
 }
 
+.top-minus {
+  margin-top: -40px
+}
+
+.btn-action.full {
+  max-width: 100%;
+}
+
 /*BLOG*/
 .listagem {
   margin-top: 150px
+}
+
+.single ~ .listagem {
+  margin-top: 50px
 }
 
 .listagem .title{
@@ -408,6 +420,62 @@ img {
   float: none!important;
 }
 
+.coins {
+  float: right;
+  margin-left: -30px;
+}
+
+.coins span{
+  font-size: 17px;
+  margin-left: 30px;
+}
+
+.coins i{
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.coins .fa-money{
+  color: #f7dc70;
+}
+
+.coins .fa-diamond{
+  color: #b54870;
+}
+
+/* PERFIL */
+.perfil {
+  margin-top: 50px;
+}
+
+.perfil .container{
+  padding-bottom: 50px;
+}
+
+.perfil h2 {
+  color: #333333;
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  float: left;
+  font-weight: 600;
+}
+
+.perfil p {
+  color: #999999;
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 0;
+  padding-bottom: 0;
+  display: block;
+  float: left;
+}
+
+.perfil figure {
+  position: relative;
+}
+
+
 /* MODAL */
 .modal {
   z-index: 99999999!important;
@@ -481,6 +549,44 @@ img {
   float: left;
   margin-right: 20px
 }
+
+.info-modal figure {
+  position: relative;
+}
+
+.info-modal .coins {
+  float: left;
+  margin-left: -30px;
+}
+
+.coins span{
+  font-family: 'Tahoma';
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.coins i{
+  margin-right: 5px;
+  font-size: 22px;
+}
+
+.coins .fa-money{
+  color: #139384;
+}
+
+.coins .fa-diamond{
+  color: #b54870;
+}
+
+.info-modal .coins a {
+  margin-left: 20px;
+  max-width: 230px;
+}
+
+.info-modal .coins a span {
+  margin-left: 0;
+}
+
 
 /* FORMULARIO */
 .formulario {

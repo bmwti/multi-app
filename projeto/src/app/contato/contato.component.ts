@@ -2,23 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 
 @Component({
-  selector: 'app-perfil',
-  templateUrl: './perfil.component.html',
-  styleUrls: ['./perfil.component.css']
+  selector: 'app-contato',
+  templateUrl: './contato.component.html',
+  styleUrls: ['./contato.component.css']
 })
-export class PerfilComponent implements OnInit {
+export class ContatoComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
-
-    var header = $('header');
-    if(localStorage.getItem('user')){
-      header.addClass('user-on')
-    } else if(localStorage.getItem('faculdade')){
-      header.addClass('faculdade-on')
-    }
-
     var abrirModal = function() {
       $('.modal, .nosso-overlay').fadeIn();
     }
@@ -30,7 +22,6 @@ export class PerfilComponent implements OnInit {
     $('.openModal').click(abrirModal);
     $('.nosso-overlay').click(fecharModal);
     $('.btn-fechar').click(fecharModal);
-
-
   }
+
 }
