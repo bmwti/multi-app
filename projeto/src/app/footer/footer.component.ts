@@ -15,6 +15,10 @@ export class FooterComponent implements OnInit {
       $("html, body").animate({ scrollTop: 0 }, "slow");
       return false;
     });
+    $("a").click(function() {
+      console.log("kfjkdsjf");
+      $("html, body").scrollTop(0);
+    });
   }
 
 }

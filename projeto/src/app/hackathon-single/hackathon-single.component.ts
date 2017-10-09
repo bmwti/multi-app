@@ -17,8 +17,6 @@ export class HackathonSingleComponent implements OnInit {
 
     var fecharModal = function() {
       $('.modal, .nosso-overlay').fadeOut();
-      $('.modal-content').removeClass('show');
-      $('#confirmar-participar').addClass('show');
     }
 
     var animacaoConfirmar = function() {

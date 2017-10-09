@@ -24,6 +24,11 @@ export class CadastroComponent implements OnInit {
           $(tabgroup).children('div').fadeOut();
           $(target).fadeIn();
     })
+
+    $('.assinatura').click(function(){
+      $(this).closest('.assinaturas').find('.assinatura').removeClass('active');
+      $(this).addClass('active');
+    });
   }
 
 }

@@ -12,18 +12,20 @@
   width: 45%;
 }
 .tabs a{
-  color: #fff;
+  color: #4a4a4a;
   display: block;
   padding: 15px 0;
   box-sizing: border-box;
   font-size: 20px;
-  background-color: #139384;
+  background-color: #eeeeee;
   border-radius: 5px;
+  text-transform: uppercase;
 }
 
 .tabs li a.active,
 .tabs li a:hover{
   background-color: #35c1d0;
+  color: #fff;
 }
 
 .assinaturas {
@@ -49,20 +51,45 @@
 .assinaturas .tipo-assinatura {
   display: block;
   text-align: center;
-  background-color: #139384;
-  color: #fff;
+  background-color: #eee;
+  color: #4a4a4a;
   padding: 10px 0;
   margin-bottom: 15px;
   font-size: 20px;
 }
 
-
 .assinaturas .assinatura:hover,
+.assinaturas .assinatura.active,
 .assinaturas .assinatura:focus {
   transition: all 0.3s linear;
   transform: scale(1.08);
   position: relative;
   z-index: 22;
+  cursor: pointer;
+}
+
+.assinaturas .assinatura.active {
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.assinaturas .assinatura.active:after {
+  content: "\F00C";
+  font-size: inherit;
+  font: normal normal normal 14px/1 FontAwesome;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.assinaturas .assinatura:hover .tipo-assinatura,
+.assinaturas .assinatura.active .tipo-assinatura,
+.assinaturas .assinatura:focus .tipo-assinatura {
+  color: #fff;
+  background-color: #35c1d0
 }
 
 .assinaturas .valor-assinatura {
@@ -83,6 +110,14 @@
   margin-bottom: 10px;
   padding: 0 18px 5px;
   font-size: 16px;
+}
+
+.assinaturas li .fa-check {
+  color: #35c1d0
+}
+
+.assinaturas li .fa-times {
+  color: #e74957
 }
 
 .assinaturas li:last-child {

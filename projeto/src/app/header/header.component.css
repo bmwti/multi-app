@@ -72,10 +72,11 @@ header .info-user {
 header .box-logout {
   position: absolute;
   width: 100px;
-  top: 80px;
+  top: 60px;
+  padding-top: 20px;
   right: 20px;
   transition: all 1s;
-  opacity: 0;
+  display: none;
   color: #FFF;
   font-size: 18px;
 }
@@ -99,5 +100,5 @@ header .box-logout a:hover {
 }
 
 header .info-user:hover .box-logout {
-  opacity: 1
+  display: block;
 }

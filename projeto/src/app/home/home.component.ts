@@ -13,7 +13,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     $('#game-action li').click(function(){
       var id = $(this).attr('data-id');
-      $('.game-item').removeClass('active');
+      $('.game-item, #game-action li').removeClass('active');
+      $(this).addClass('active');
       $('#game-' + id).addClass('active');
     });
 
@@ -24,7 +25,6 @@ export class HomeComponent implements OnInit {
     } else if(localStorage.getItem('faculdade')){
       header.addClass('faculdade-on')
     }
-  }
 
   }
 }

@@ -63,17 +63,21 @@
   padding: 15px;
 }
 
-#lista-gold_coins li {
+#lista-gold_coins li, .totalCoins {
   font-size: 18px;
 }
 
-#lista-gold_coins li i {
+#lista-gold_coins li i, .totalCoins i {
   font-size: 20px;
   color: #b54870;
   margin-right: 10px;
 }
 
-#lista-gold_coins li span {
+#lista-gold_coins li span, .totalCoins span {
   font-family: 'Tahoma';
   font-weight: 500;
+}
+
+.totalCoins {
+  margin-top: -25px
 }
