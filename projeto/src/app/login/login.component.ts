@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
         "email": "claudeixom@fiap.com",
         "coins": {
           "multiCoins": 1500,
-          "goldCoins": 200
+          "goldCoins": 145
         }
       }
     };

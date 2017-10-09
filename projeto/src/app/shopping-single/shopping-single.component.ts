@@ -18,7 +18,7 @@ export class ShoppingSingleComponent implements OnInit {
         "email": "claudeixom@fiap.com",
         "coins": {
           "multiCoins": 1500,
-          "goldCoins": 200
+          "goldCoins": 145
         }
       }
     };
@@ -96,10 +96,10 @@ export class ShoppingSingleComponent implements OnInit {
     });
 
     btnCancelar.click(function(){
-      userGoldCoins[0].innerHTML = '<i class="fa fa-diamond" aria-hidden="true"></i> 200$'
+      userGoldCoins[0].innerHTML = '<i class="fa fa-diamond" aria-hidden="true"></i> 145$'
       userMultiCoins[0].innerHTML = '<i class="fa fa-money" aria-hidden="true"></i> 1500$'
       fecharModal()
-      data.user.coins.goldCoins = 200
+      data.user.coins.goldCoins = 145
       data.user.coins.multiCoins = 1500
       var obj = data
       saveData(obj)

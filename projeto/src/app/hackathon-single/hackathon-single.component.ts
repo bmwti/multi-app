@@ -11,6 +11,12 @@ export class HackathonSingleComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    var btnHackathon = $('.btnHackathon')
+
+    if(localStorage.getItem('user')){
+      btnHackathon.addClass('user-on')
+    }
+
     var abrirModal = function() {
       $('.modal, .nosso-overlay').fadeIn();
     }
