@@ -597,11 +597,20 @@ img {
   color: #35c1d0;
 }
 
-.formulario .form-control {
+.formulario input.form-control,
+.formulario textarea.form-control {
   background-color: #eeeeee;
   border: none;
   box-shadow: none;
   padding: 20px 15px;
+  font-size: 16px;
+}
+
+.formulario select.form-control {
+  background-color: #eeeeee;
+  border: none;
+  box-shadow: none;
+  /*padding: 20px 15px;*/
   font-size: 16px;
 }
 
