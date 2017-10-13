@@ -43,8 +43,8 @@ export class ShoppingSingleComponent implements OnInit {
     function addDados(obj){
       var multiCoin = obj.user.coins.multiCoins
       var goldCoin = obj.user.coins.goldCoins
-      userMultiCoins[0].innerHTML = '<i class="fa fa-money" aria-hidden="true"></i> ' + multiCoin
-      userGoldCoins[0].innerHTML = '<i class="fa fa-diamond" aria-hidden="true"></i> ' + goldCoin
+      userMultiCoins[0].innerHTML = '<img src="../../assets/img/Multi.png" alt=""> ' + multiCoin
+      userGoldCoins[0].innerHTML = '<img src="../../assets/img/Gold.png" alt=""> ' + goldCoin
     }
 
     function virify(){
@@ -70,7 +70,7 @@ export class ShoppingSingleComponent implements OnInit {
          //comprar
         valorCurso = parseInt(valorCurso)
         var resultado = valorAtual - valorCurso
-        userMultiCoins[0].textContent = resultado + '$'
+        userMultiCoins[0].innerHTML = '<img src="../../assets/img/Multi.png" alt=""> ' + resultado + '$'
         data.user.coins.multiCoins = resultado
         var obj = data
         saveData(obj)
@@ -88,7 +88,7 @@ export class ShoppingSingleComponent implements OnInit {
          //comprar
         valorCurso = parseInt(valorCurso)
         var resultado = valorAtual - valorCurso
-        userGoldCoins[0].textContent = resultado + '$'
+        userGoldCoins[0].innerHTML = '<img src="../../assets/img/Gold.png" alt=""> ' + resultado + '$'
         data.user.coins.goldCoins = resultado
         var obj = data
         saveData(obj)
@@ -96,9 +96,8 @@ export class ShoppingSingleComponent implements OnInit {
     });
 
     btnCancelar.click(function(){
-      userGoldCoins[0].innerHTML = '<i class="fa fa-diamond" aria-hidden="true"></i> 145$'
-      userMultiCoins[0].innerHTML = '<i class="fa fa-money" aria-hidden="true"></i> 1500$'
-      fecharModal()
+      userGoldCoins[0].innerHTML = '<img src="../../assets/img/Gold.png" alt=""> 145$'
+      userMultiCoins[0].innerHTML = '<img src="../../assets/img/Multi.png" alt=""> 1500$'
       data.user.coins.goldCoins = 145
       data.user.coins.multiCoins = 1500
       var obj = data

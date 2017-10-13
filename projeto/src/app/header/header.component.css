@@ -61,7 +61,7 @@ header.faculdade-on .faculdade-link {
 }
 
 header .navegacao {
-  background-color: #35c1d0
+  background-color: rgba(53, 193, 208, 0.9)
 }
 
 header .info-user {
@@ -82,7 +82,7 @@ header .box-logout {
 }
 
 header .box-logout li {
-  background-color: #35c1d0;
+  background-color: rgba(53, 193, 208, 0.9);
   border: 1px solid rgba(255,255,255,.4)
 }
 

@@ -3,7 +3,7 @@
 #destaque {
   width: 100%;
   padding: 60px 0;
-  background-color: #35c1d0;
+  background-color: rgba(53, 193, 208, 0.9);
   position: relative;
 }
 
@@ -264,7 +264,7 @@
 #gamificacao h2 {
   font-size: 40px;
   font-weight: 500;
-  color: #35c1d0;
+  color: rgba(53, 193, 208, 0.9);
   width: 100%;
   text-align: center;
   text-transform: uppercase;
@@ -306,7 +306,7 @@
 
 #game-action li:hover,
 #game-action li.active {
-  background-color: #35c1d0;
+  background-color: rgba(53, 193, 208, 0.9);
 }
 
 #game-content  {
@@ -326,7 +326,7 @@
 }
 
 .game-item h3 {
-  color: #35c1d0;
+  color: rgba(53, 193, 208, 0.9);
   margin-bottom: 20px
 }
 

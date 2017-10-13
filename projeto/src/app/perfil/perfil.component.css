@@ -1,5 +1,5 @@
 .perfil .hp {
-  background-color: #35c1d0;
+  background-color: rgba(53, 193, 208, 0.9);
   position: absolute;
   top: 22px;
   left: -20px;
@@ -67,9 +67,9 @@
   font-size: 18px;
 }
 
-#lista-gold_coins li i, .totalCoins i {
-  font-size: 20px;
-  color: #b54870;
+#lista-gold_coins li img, .totalCoins img {
+  width: 30px;
+  height: 30px;
   margin-right: 10px;
 }
 

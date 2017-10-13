@@ -356,7 +356,7 @@ img {
 }
 
 .list-post .day{
-  background-color: #35c1d0;
+  background-color: rgba(53, 193, 208, 0.9);
   color: #fff;
   position: absolute;
   bottom: 10px;
@@ -410,7 +410,7 @@ img {
 }
 
 .list-post .visitantes i{
-  color: #35c1d0;
+  color: rgba(53, 193, 208, 0.9);
   font-size: 16px;
   margin-right: 10px;
 }
@@ -430,9 +430,10 @@ img {
   margin-left: 30px;
 }
 
-.coins i{
+.coins img{
   margin-right: 5px;
-  font-size: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .coins .fa-money{
@@ -505,7 +506,7 @@ img {
 }
 
 .modal-content {
-  background-color: #35c1d0
+  background-color: rgba(53, 193, 208, 0.9)
 }
 
 .modal-content {
@@ -594,7 +595,7 @@ img {
 }
 
 .formulario h2, .formulario label{
-  color: #35c1d0;
+  color: rgba(53, 193, 208, 0.9);
 }
 
 .formulario .form-control {
@@ -607,6 +608,6 @@ img {
 
 .formulario .btn-action {
   width: 190px;
-  background-color: #35c1d0;
+  background-color: rgba(53, 193, 208, 0.9);
   margin-top: 20px
 }
