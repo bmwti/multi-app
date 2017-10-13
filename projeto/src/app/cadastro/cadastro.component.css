@@ -123,3 +123,12 @@
 .assinaturas li:last-child {
   border-bottom: 0;
 }
+
+@media(max-width: 767px) {
+  .assinaturas {
+    display: block;
+  }
+  .assinaturas .assinatura {
+    margin: 0 auto 50px
+  }
+}

@@ -81,3 +81,10 @@
 .totalCoins {
   margin-top: -25px
 }
+
+@media screen and (max-width: 1000px){
+  .perfil figure {
+    max-width: 368px;
+    margin: 0 auto 40px;
+  }
+}

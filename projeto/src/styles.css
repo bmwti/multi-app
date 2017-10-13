@@ -3,6 +3,8 @@
 .base {
   font-family: 'Dosis', sans-serif;
   margin-top: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -249,6 +251,16 @@ img {
   margin-top: -40px
 }
 
+@media screen and (max-width: 1000px) {
+  .coins{
+    float: left!important;
+  }
+
+  .top-minus {
+    margin-top: 0;
+  }
+}
+
 .btn-action.full {
   max-width: 100%;
 }
@@ -486,6 +498,22 @@ img {
   overflow: visible!important;
 }
 
+@media screen and (max-width: 1000px) {
+  .modal {
+    width: 100%;
+    top: 38%!important;
+  }
+
+  .modal h3{
+    font-size: 20px;
+  }
+
+  .modal figure{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
 .modal-dialog {
   /*height: 100%;*/
 }
@@ -528,6 +556,21 @@ img {
 .info-modal {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .info-modal .coins {
+    float: none!important;
+    text-align: center;
+    max-width: 190px;
+    display: block;
+  }
+
+  .info-modal .coins a{
+    margin-left: 0!important;
+    margin-bottom: 15px;
+    width: 100%;
+  }
 }
 
 .info-modal h2 {
@@ -619,4 +662,14 @@ img {
   width: 190px;
   background-color: rgba(53, 193, 208, 0.9);
   margin-top: 20px
+}
+
+@media (max-width: 800px) {
+  .list-post {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .list-post li {
+    width: 100%;
+  }
 }

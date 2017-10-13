@@ -356,3 +356,72 @@
 #ver-mais {
   width: 200px;
 }
+
+@media (max-width: 410px) {
+  #motivos-participar img {
+    height: 250px!important;
+  }
+}
+@media (min-width: 411px) and (max-width: 767px) {
+  #motivos-participar img {
+    height: 380px!important;
+  }
+}
+@media (max-width: 767px) {
+  #descricao-hackathon {
+    padding-bottom: 40px
+  }
+  #destaque-content h2 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+  #destaque-content p {
+    font-size: 18px
+  }
+  .secao-motivos {
+    padding-top: 50px
+  }
+  #propositos h2 {
+    font-size: 30px;
+    margin-bottom: 50px
+  }
+  #motivos-realizar .item {
+    margin-bottom: 40px
+  }
+  #motivos-participar .row {
+    margin: 20px 0
+  }
+  #motivos-participar .row.left {
+    flex-direction: column-reverse;
+  }
+  #motivos-participar .row.right {
+    display: block;
+  }
+  #motivos-participar .participar-content {
+    max-width: 100%;
+  }
+  #motivos-participar .arte-motivo {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  #gamificacao-content .col-sm-2 {
+    height: 100px;
+  }
+  #gamificacao-content .col-sm-5 {
+    margin: 50px 0;
+    height: 270px;
+  }
+  #gamificacao-content .col-sm-5:last-child {
+    display: none;
+  }
+  #game-action {
+    width: 100%;
+    height: 100px
+  }
+  #game-action li {
+    width: 33.3333%;
+    height: 100%;
+    float: left;
+  }
+}

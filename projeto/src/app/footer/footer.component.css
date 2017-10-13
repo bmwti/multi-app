@@ -20,5 +20,14 @@ footer {
   bottom: 0;
   right: 20px;
   cursor: pointer;
-  width: 40px;  
+  width: 40px;
+}
+
+@media(max-width: 767px) {
+  footer nav {
+    display: none;
+  }
+  footer .navegacao {
+    padding: 20px 0
+  }
 }

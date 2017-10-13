@@ -24,5 +24,19 @@ export class HeaderComponent implements OnInit {
       header.addClass('faculdade-on')
     }
 
+    var abrirMenu = function() {
+      $('header .menu, header .btns').addClass('active');
+      $('#header-overlay').fadeIn();
+    }
+
+    var fecharMenu = function() {
+      $('header .menu, header .btns').removeClass('active');
+      $('#header-overlay').fadeOut();
+    }
+
+
+    $('#startMenu').click(abrirMenu)
+    $('#header-overlay, header .menu a, .btns a').click(fecharMenu)
+
   }
 }

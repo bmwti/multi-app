@@ -6,6 +6,7 @@
       </a>
 
       <nav>
+        <a href="javascript:void(0)" id="startMenu" class="fa fa-bars"></a>
         <ul class="menu">
           <li><a [routerLink]="['/']">Home</a></li>
           <li><a [routerLink]="['/hackathons']">Hackathons</a></li>
@@ -19,6 +20,8 @@
         <a [routerLink]="['/cadastro']" class="btn-action red">CRIAR CONTA</a>
         <a [routerLink]="['/login']" class="btn-action green">ENTRAR</a>
       </div>
+
+      <div id="header-overlay"></div>
 
       <a class="action-perfil">
         <div class="row info-user">
